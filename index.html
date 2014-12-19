@@ -13,7 +13,20 @@
 			position: absolute;
 			width: 100%;
 			height: 100%;
-
+		}
+		.header-tod {
+			position: absolute;
+			top: 15px;
+			text-align: center;
+			width: 100%;
+			color: white;
+		}
+		.footer-tod {
+			position: absolute;
+			bottom: 15px;
+			text-align: center;
+			width: 100%;
+			color: white;
 		}
 		.content {
 			display: table-cell;
@@ -39,26 +52,34 @@
 			  "hideideas": true
 			});
 			</script>
-			<audio autoplay=true>
-				<source src="kom-susser-tod.mp3" type="audio/mpeg"></source>
+			<audio autoplay=true loop=true preload=auto>
+				<source src="./kom-susser-tod.mp3" type="audio/mpeg"></source>
 			</audio>
 		</div>
+		<div class="header-tod">
+			<h1>It all returns to nothing</h1>
+		</div>
 		<div class="container-fluid tint" style="min-height: 100%">
-			<div class="row" style="min-height: 100%">
-				<div class="col-md-6 text-center vc" style="min-height: 100%">
+			<div class="row">
+				<div class="col-xs-6 text-center vc" style="min-height: 100%">
 					<h1 class="content">
 						<span id="USD-RATE"></span><br>
 						<i class="fa fa-usd"></i> <i class="fa fa-chevron-right"></i> <i class="fa fa-rub"></i>
 					</h1>
 				</div>
-				<div class="col-md-6 text-center vc" style="min-height: 100%">
+				<div class="col-xs-6 text-center vc" style="min-height: 100%">
 					<h1 class="content">
 						<span id="EUR-RATE"></span><br>
 						<i class="fa fa-eur"></i> <i class="fa fa-chevron-right"></i> <i class="fa fa-rub"></i>
 					</h1>
 				</div>
-			</div>	
+			</div>
 		<div>
+		<footer class="footer-tod text-center">
+			<a href="http://twitter.com/Misaka42"><i class="fa fa-twitter fa-fw"></i> Misaka42</a> |
+			<a href="http://github.com/Misaka42/misaka42.github.io"><i class="fa fa-fw fa-github"></i> Repo</a> |
+			<a href="http://zenrus.ru"><i class="fa fa-fw fa-copyright"></i> Original Idea</a>
+		</footer>
 	</body>
 	<script src="https://code.jquery.com/jquery-2.1.2.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
